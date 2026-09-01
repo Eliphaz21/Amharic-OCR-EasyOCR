@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Model weights and checkpoints (Heavy binaries)
+*.pth
+*.pt
+*.pdiparams
+*.bin
+*.onnx
+
+# PaddleOCR & PyTorch caches
+.cache/
+custom_tracker/.cache/
+
+# Datasets and outputs
+all_data/
+cropped_lines/
+output/
+saved_models/test_evaluations/
+*.log
+log_train.txt
+log_dataset.txt
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Local development and temporary files
+*.bat
+*.ps1
+*.tmp
+**/test_evaluations/
+scratch/
+temp/
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+python*/
