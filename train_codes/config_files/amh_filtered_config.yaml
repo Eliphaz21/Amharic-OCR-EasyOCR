@@ -1,0 +1,46 @@
+number: "0123456789፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼"
+symbol: "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~«»°÷፡።፣፤፥፦፧ ፨"
+lang_char: "ሀሁሂሃሄህሆሇለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቇቈቊቋቌቍበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኇኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኯኰኲኳኴኵኸኹኺኻኼኽኾወዉዊዋዌውዎዏዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮዯደዱዲዳዴድዶዷዸዹዺዻዼዽዾዿጀጁጂጃጄጅጆጇገጉጊጋጌግጎጏጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፇፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗፘፙፚጛዂዃዄዅABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+experiment_name: "Amharic_OCR_Model_VGG16"
+train_data: ".../../../Datasets/OCR/CAC_DA_Amh_OCR/train"
+valid_data: ".../../../Datasets/OCR/CAC_DA_Amh_OCR/val"
+manualSeed: 1111
+workers: 4
+batch_size: 32
+num_iter: 280000
+valInterval: 1000
+saved_model: "" #'saved_models/Amharic_OCR_Model/best_accuracy.pth'
+FT: True #
+optim: adamw # default is Adadelta
+lr: 0.00001
+weight_decay: 1e-4
+beta1: 0.9
+rho: 0.95
+eps: 0.00000001
+grad_clip: 5
+#Data processing
+select_data: "train"
+batch_ratio: "1"
+total_data_usage_ratio: 1.0
+batch_max_length: 150
+imgH: 64
+imgW: 2400
+rgb: false
+contrast_adjust: True
+sensitive: True
+PAD: True
+#contrast_adjust: 0.0
+data_filtering_off: False
+# Model Architecture
+Transformation: "None"
+FeatureExtraction: "VGG"
+SequenceModeling: "BiLSTM"
+Prediction: "CTC"
+num_fiducial: 20
+input_channel: 1
+output_channel: 512
+hidden_size: 256
+decode: "greedy"
+new_prediction: False
+freeze_FeatureExtraction: False
+freeze_SequenceModeling: False
