@@ -1,0 +1,27 @@
+number: "0123456789፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼"
+symbol: "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~«»°÷፡።፣፤፥፦፧ ፨"
+lang_char: "ሀሁሂሃሄህሆሇለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቇቈቊቋቌቍበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኇኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኯኰኲኳኴኵኸኹኺኻኼኽኾወዉዊዋዌውዎዏዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮዯደዱዲዳዴድዶዷዸዹዺዻዼዽዾዿጀጁጂጃጄጅጆጇገጉጊጋጌግጎጏጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፇፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗፘፙፚጛዂዃዄዅABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+character: "0123456789፩፪፫፬፭፮፯፰፱፲፳፴፵፶፷፸፹፺፻፼!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~«»°÷፡።፣፤፥፦፧ ፨ሀሁሂሃሄህሆሇለሉሊላሌልሎሏሐሑሒሓሔሕሖሗመሙሚማሜምሞሟሠሡሢሣሤሥሦሧረሩሪራሬርሮሯሰሱሲሳሴስሶሷሸሹሺሻሼሽሾሿቀቁቂቃቄቅቆቇቈቊቋቌቍበቡቢባቤብቦቧቨቩቪቫቬቭቮቯተቱቲታቴትቶቷቸቹቺቻቼችቾቿኀኁኂኃኄኅኆኇኈኊኋኌኍነኑኒናኔንኖኗኘኙኚኛኜኝኞኟአኡኢኣኤእኦኧከኩኪካኬክኮኯኰኲኳኴኵኸኹኺኻኼኽኾወዉዊዋዌውዎዏዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦዧየዩዪያዬይዮዯደዱዲዳዴድዶዷዸዹዺዻዼዽዾዿጀጁጂጃጄጅጆጇገጉጊጋጌግጎጏጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾጿፀፁፂፃፄፅፆፇፈፉፊፋፌፍፎፏፐፑፒፓፔፕፖፗፘፙፚጛዂዃዄዅABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+experiment_name: "test_005_218k"
+test_data: "C:/Users/PC/Desktop/CAC_DA_Amh_OCR/test"
+#test_data: "../../../Datasets/OCR/CAC_DA_Amh_OCR/test"
+saved_model: "C:/Users/PC/Downloads/best_cer (1).pth"
+workers: 2
+batch_size: 32
+batch_max_length: 150
+imgH: 64
+imgW: 1200
+rgb: false
+contrast_adjust: True
+sensitive: True
+PAD: True
+data_filtering_off: False
+Transformation: "None"
+FeatureExtraction: "VGG"
+SequenceModeling: "BiLSTM"
+Prediction: "CTC"
+num_fiducial: 20
+input_channel: 1
+output_channel: 512
+hidden_size: 256
+decode: "greedy"
