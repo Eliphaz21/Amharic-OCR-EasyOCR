@@ -1,0 +1,10 @@
+opencv-python>=4.5.3
+Pillow>=9.0.0
+Polygon3>=3.0.9
+PyYAML>=5.4.1
+scikit-image>=0.17.2
+Shapely>=1.8.0
+torch>=1.13.1
+torchvision>=0.14.1
+wandb>=0.12.9
+scipy>=1.9.0
