@@ -1,0 +1,21 @@
+# Amharic OCR — Deep Text Recognition & Line Detection Dependencies
+# PyTorch and Torchvision
+torch>=1.13.0
+torchvision>=0.14.0
+
+# Image Processing & Augmentation
+pillow>=9.0.0
+opencv-python>=4.6.0
+albumentations>=1.3.0
+scipy>=1.9.0
+
+# Data Science & Natural Language
+numpy>=1.22.0
+pandas>=1.4.0
+natsort>=8.2.0
+nltk>=3.7
+pyyaml>=6.0
+
+# Text Detection & PDF Handling
+paddlepaddle>=2.4.0
+pdf2image>=1.16.0
